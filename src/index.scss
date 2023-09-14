@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply w-full font-montserrat;
+}
+
+thead,
+tbody {
+  @apply p-3 h-auto w-full text-base;
+}
+
+th,
+td {
+  @apply p-2 border-[1px] border-black font-normal whitespace-nowrap;
+}
+
+tr {
+  @apply w-full;
+}
+
+th {
+  @apply py-4 font-semibold text-lg;
+}
+
+input {
+  @apply border-2 focus:outline-none active:outline-none  rounded-md;
+}
+
+.page-link {
+  @apply py-2 px-2 h-full flex justify-center items-center gap-2 text-sm;
+}
+
+.page-button {
+  @apply border-2 border-black rounded-md;
+}
+
+tbody tr:nth-child(odd) {
+  @apply bg-blue-300/20 !important;
+}
+
+.tab-role {
+  @apply text-left w-fit border-[1px] bg-white border-black border-b-0 rounded-t-md;
+}
+
+button.swal-conf {
+  border: 2px solid #4ade80 !important;
+  padding: 0.5em 3.5em;
+  border-radius: 5px;
+}
+button.swal-conf-fail {
+  border: 2px solid #e24c4b !important;
+  padding: 0.5em 3.5em;
+}
+
+.textDiv-light {
+  color: black;
+}
+.textDiv-dark {
+  color: white;
+}
+.swal-popup-light {
+  width: 300px !important;
+  border: 1px solid #000000 !important;
+}
+.swal-popup-dark {
+  width: 300px !important;
+  border: 1px solid white !important;
+}
+.container {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container-fail {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.custom-swal-icon {
+  content: url("./assets/saveIcon.png");
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.dILRuI {
+  border-bottom: none !important;
+}
+
+/* Chrome, Edge, and Safari */
+.datatable-scroll-blue::-webkit-scrollbar,
+.update-popup-parent::-webkit-scrollbar {
+  width: 15px;
+}
+
+.datatable-scroll-blue::-webkit-scrollbar-track,
+.update-popup-parent::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+.datatable-scroll-blue::-webkit-scrollbar-thumb,
+.update-popup-parent::-webkit-scrollbar-thumb {
+  background-color: #4893e6;
+}
+
+.datatable-scroll-white::-webkit-scrollbar,
+.update-popup-parent::-webkit-scrollbar {
+  width: 15px;
+}
+
+.datatable-scroll-white::-webkit-scrollbar-track,
+.update-popup-parent::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}

@@ -48,7 +48,7 @@ const RoleManagement = ({ showMap, setShowMap }) => {
   //   const totalRoles = roles.length;
 
   const { roles = [] } = useSelector((states) => states);
-//   console.log(roles);
+  console.log(roles);
   const [activePage, setActivePage] = useState(1);
   const totalRoles = roles.length;
 
@@ -90,7 +90,7 @@ const RoleManagement = ({ showMap, setShowMap }) => {
   );
 
   return (
-    <div className="flex flex-col container mx-20">
+    <div className="flex flex-col container mx-auto">
       <Headline
         title="Role Management"
         showMap={showMap}
